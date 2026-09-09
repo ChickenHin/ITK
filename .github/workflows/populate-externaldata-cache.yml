@@ -19,16 +19,16 @@ on:
       - '**/*.cid'
   # Keep main and release branches' caches populated as new .cid files
   # land.
-  push:
-    branches:
-      - main
-      - 'release*'
-    paths:
-      - '**/*.cid'
-  # Nightly safety net: if a populate run was skipped because some CIDs
-  # were unreachable on one day, the next night retries.
-  schedule:
-    - cron: '17 5 * * *'
+  # push:
+  #   branches:
+  #     - main
+  #     - 'release*'
+  #   paths:
+  #     - '**/*.cid'
+  # # Nightly safety net: if a populate run was skipped because some CIDs
+  # # were unreachable on one day, the next night retries.
+  # schedule:
+  #   - cron: '17 5 * * *'
   workflow_dispatch:
 
 concurrency:
