@@ -15,8 +15,8 @@ name: Cleanup stale caches (nightly sweep)
 # https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#force-deleting-cache-entries
 
 on:
-  schedule:
-    - cron: '0 6 * * *'        # 06:00 UTC daily
+  # schedule:
+  #   - cron: '0 6 * * *'        # 06:00 UTC daily
   workflow_dispatch:
 
 jobs:
